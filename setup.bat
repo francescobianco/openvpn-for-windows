@@ -45,9 +45,11 @@ echo 1. Selezionare la finestra con il terminale EasyRSA Shell >> passphrases.tx
 echo 2. Digitare ./setup.sh e premere [INVIO] >> passphrases.txt
 echo 3. Inserire le seguenti chiavi man mano vengono richieste >> passphrases.txt
 echo. >> passphrases.txt
-echo Enter New CA Key Passphrase: >> passphrases.txt
+set CA_PASSPHRASE=%RANDOM%%RANDOM%%RANDOM%%RANDOM%
+echo Enter New CA Key Passphrase: %CA_PASSPHRASE%>> passphrases.txt
 echo. >> passphrases.txt
-echo Enter New CA Key Passphrase: >> passphrases.txt
+set PEM_PASSPHRASE=%RANDOM%%RANDOM%%RANDOM%%RANDOM%
+echo Enter PEM pass phrase: %PEM_PASSPHRASE%>> passphrases.txt
 
 start notepad passphrases.txt
 

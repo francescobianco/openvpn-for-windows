@@ -9,11 +9,11 @@ echo "set KEY_ORG=OpenVPN" >> vars.bat
 echo "set KEY_EMAIL=bianco@javanile.org" >> vars.bat
 echo "set DH_KEY_SIZE=2048" >> vars.bat
 
-./easyrsa init-pki
+echo "yes\nyes" | ./easyrsa init-pki
 
 ./vars.bat
 
-./easyrsa clean-all
+echo "yes\nyes" | ./easyrsa clean-all
 
 ./easyrsa build-ca
 
