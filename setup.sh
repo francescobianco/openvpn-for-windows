@@ -28,3 +28,10 @@ done
 
 ./easyrsa gen-dh
 
+cp pki/ca.crt "C:/Program Files/OpenVPN/config/"
+cp pki/dh.pem "C:/Program Files/OpenVPN/config/"
+cp pki/issued/server.crt "C:/Program Files/OpenVPN/config/"
+cp pki/private/server.key "C:/Program Files/OpenVPN/config/"
+cp "C:/Program Files/OpenVPN/sample-config/server.ovpn" "C:/Program Files/OpenVPN/config/"
+
+
