@@ -50,6 +50,11 @@ echo Enter New CA Key Passphrase: %CA_PASSPHRASE%>> passphrases.txt
 echo. >> passphrases.txt
 set PEM_PASSPHRASE=%RANDOM%%RANDOM%%RANDOM%%RANDOM%
 echo Enter PEM pass phrase: %PEM_PASSPHRASE%>> passphrases.txt
+for /l %i in (1,1,4) do (
+  echo. >> passphrases.txt
+  set PEM_PASSPHRASE=%RANDOM%%RANDOM%%RANDOM%%RANDOM%
+  echo Client #%1: Enter PEM pass phrase: %PEM_PASSPHRASE%>> passphrases.txt
+)
 
 start notepad passphrases.txt
 

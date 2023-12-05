@@ -27,3 +27,4 @@ for index in 1 2 3 4; do
 done
 
 ./easyrsa gen-dh
+
