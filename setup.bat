@@ -33,7 +33,17 @@ echo Update setup.sh file
 copy setup.sh "C:\Program Files\OpenVPN\easy-rsa\setup.sh"
 copy test.bat "C:\Program Files\OpenVPN\easy-rsa\test.bat"
 
-xcopy /E "C:\Program Files\OpenVPN\easy-rsa" .\easy-rsa\
+xcopy /Y /E "C:\Program Files\OpenVPN\easy-rsa" .\easy-rsa\
 
 cd "C:\Program Files\OpenVPN\easy-rsa"
+
+echo. > passphrases.txt
+echo ISTRUZIONI >> passphrases.txt
+echo ========== >> passphrases.txt
+echo. >> passphrases.txt
+echo 1. Selezionare la finestra con il terminale EasyRSA Shell >> passphrases.txt
+echo 2. Digitare ./setup.sh e premere [INVIO] >> passphrases.txt
+echo 3. Inserire le seguenti chiavi man mano vengono richieste >> passphrases.txt
+start notepad passphrases.txt
+
 EasyRSA-Start.bat
