@@ -44,7 +44,11 @@ mv -f "C:/Program Files/OpenVPN/config/server.ovpn" "C:/Program Files/OpenVPN/co
 ./bin/sed -e 's/^tls-auth .*/#tls-auth "C:\\\\Program Files\\\\OpenVPN\\\\config\\\\ta.key"/g' "C:/Program Files/OpenVPN/config/server.ovpn.4" > "C:/Program Files/OpenVPN/config/server.ovpn.5"
 
 mv -f "C:/Program Files/OpenVPN/config/server.ovpn.5" "C:/Program Files/OpenVPN/config/server.ovpn"
-rm -f "C:/Program Files/OpenVPN/config/server.ovpn.*"
+rm -f "C:/Program Files/OpenVPN/config/server.ovpn.4"
+rm -f "C:/Program Files/OpenVPN/config/server.ovpn.3"
+rm -f "C:/Program Files/OpenVPN/config/server.ovpn.2"
+rm -f "C:/Program Files/OpenVPN/config/server.ovpn.1"
+rm -f "C:/Program Files/OpenVPN/config/server.ovpn.0"
 
 mkdir -p ../clients
 PUBLIC_IP=$(curl -s -4 icanhazip.com)
