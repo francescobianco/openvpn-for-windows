@@ -2,11 +2,11 @@
 
 echo "Setup OpenVPN by Francesco Bianco"
 
-echo "set KEY_COUNTRY=US" > vars.bat
-echo "set KEY_PROVINCE=CA" >> vars.bat
-echo "set KEY_CITY=SanFrancisco" >> vars.bat
+echo "set KEY_COUNTRY=IT" > vars.bat
+echo "set KEY_PROVINCE=TP" >> vars.bat
+echo "set KEY_CITY=Castelvetrano" >> vars.bat
 echo "set KEY_ORG=OpenVPN" >> vars.bat
-echo "set KEY_EMAIL=mail@host.domain" >> vars.bat
+echo "set KEY_EMAIL=bianco@javanile.org" >> vars.bat
 echo "set DH_KEY_SIZE=2048" >> vars.bat
 
 ./easyrsa init-pki
